@@ -1,7 +1,7 @@
 {
-  "name": "@opuscapita/slate-08-15-2017-1",
+  "name": "@opuscapita/slate",
   "description": "A completely customizable framework for building rich text editors.",
-  "version": "0.21.2",
+  "version": "0.21.2-08-15-2017-1",
   "license": "MIT",
   "repository": "git://github.com/ianstormtaylor/slate.git",
   "main": "./lib/index.js",
