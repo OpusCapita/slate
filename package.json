@@ -101,6 +101,7 @@
     "open": "open http://localhost:8080/dev.html",
     "postpublish": "npm run gh-pages",
     "prepublish": "npm run build",
+    "publish-release": "update-changelog -- --all && npm run build:npm && npm-publish --release",
     "release": "np",
     "release:next": "np --tag=next",
     "start": "http-server ./examples",
