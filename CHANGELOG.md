@@ -1,3 +1,6 @@
+## [v0.21.2-08-15-2017-1](https://github.com/OpusCapita/slate/compare/v0.21.2...v0.21.2-08-15-2017-1) (Tue, 15 Aug 2017 14:27:11 GMT)
+ - Update version (Kirill Volkovich <volkovich@scand.com>, f9b9640)
+
 ## [v0.21.2](https://github.com/OpusCapita/slate/compare/v0.21.2...v0.21.2) (Wed, 09 Aug 2017 19:16:12 GMT)
  - Add "publish-release" scirpt to package.json (Kirill Volkovich <volkovich@scand.com>, 1ed2625)
  - Added @opuscapita/npm-scripts (Kirill Volkovich <volkovich@scand.com>, 4d311c9)
