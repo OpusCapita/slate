@@ -3,8 +3,12 @@
   "description": "A completely customizable framework for building rich text editors.",
   "version": "0.21.2-08-15-2017-1",
   "license": "MIT",
-  "repository": "git://github.com/ianstormtaylor/slate.git",
+  "repository": "OpusCapita/slate",
   "main": "./lib/index.js",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "dependencies": {
     "@opuscapita/npm-scripts": "2.0.0",
     "debug": "^2.3.2",
