@@ -1,7 +1,7 @@
 {
   "name": "@opuscapita/slate-react",
   "description": "A set of React components for building completely customizable rich-text editors.",
-  "version": "0.10.23",
+  "version": "0.10.24",
   "license": "MIT",
   "repository": "git://github.com/ianstormtaylor/slate.git",
   "main": "./lib/index.js",

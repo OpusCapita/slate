@@ -1,7 +1,7 @@
 {
   "name": "@opuscapita/slate-hyperscript",
   "description": "A hyperscript helper for creating Slate documents.",
-  "version": "0.4.16",
+  "version": "0.4.17",
   "license": "MIT",
   "repository": "git://github.com/ianstormtaylor/slate.git",
   "main": "./lib/index.js",
