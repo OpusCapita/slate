@@ -299,7 +299,9 @@ class Editor extends React.Component {
       schema: schema || {}
     }
 
-    for (const prop of PLUGINS_PROPS) {
+    // for (const prop of PLUGINS_PROPS) {
+    for (let i = 0; i < PLUGINS_PROPS.length; i++) {
+      const prop = PLUGINS_PROPS[i]
       // Skip `onChange` because the editor's `onChange` is special.
       if (prop == 'onChange') continue
 
@@ -328,7 +330,9 @@ class Editor extends React.Component {
  * Mix in the property types for the event handlers.
  */
 
-for (const prop of EVENT_HANDLERS) {
+// for (const prop of EVENT_HANDLERS) {
+for (let i = 0; i < EVENT_HANDLERS.length; i++) {
+  const prop = EVENT_HANDLERS[i]
   Editor.propTypes[prop] = Types.func
 }
 

@@ -8,6 +8,7 @@ import throttle from 'lodash.throttle'
 
 import EVENT_HANDLERS from '../constants/event-handlers'
 import Node from './node'
+import findClosestNode from '../utils/find-closest-node'
 import findDOMRange from '../utils/find-dom-range'
 import findRange from '../utils/find-range'
 import scrollToSelection from '../utils/scroll-to-selection'
@@ -263,7 +264,8 @@ class Content extends React.Component {
     const el = target.nodeType === 3 ? target.parentNode : target
     return (
       (el.isContentEditable) &&
-      (el === element || el.closest('[data-slate-editor]') === element)
+      // (el === element || el.closest('[data-slate-editor]') === element)
+      (el === element || findClosestNode(el, '[data-slate-editor]') === element)
     )
   }
 
@@ -325,7 +327,8 @@ class Content extends React.Component {
       handler == 'onDragStart'
     ) {
       const { target } = event
-      const targetEditorNode = target.closest('[data-slate-editor]')
+      // const targetEditorNode = target.closest('[data-slate-editor]')
+      const targetEditorNode = findClosestNode(target, '[data-slate-editor]')
       if (targetEditorNode !== this.element) return
     }
 

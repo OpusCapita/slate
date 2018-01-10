@@ -648,7 +648,9 @@ class Node {
   getDescendantAtPath(path) {
     let descendant = this
 
-    for (const index of path) {
+    // for (const index of path) {
+    for (let i = 0; i < path.length; i++) {
+      const index = path[i]
       if (!descendant) return
       if (!descendant.nodes) return
       descendant = descendant.nodes.get(index)

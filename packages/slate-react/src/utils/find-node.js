@@ -1,4 +1,6 @@
 
+import findClosestNode from './find-closest-node'
+
 /**
  * Find a Slate node from a DOM `element`.
  *
@@ -8,7 +10,8 @@
  */
 
 function findNode(element, value) {
-  const closest = element.closest('[data-key]')
+  // const closest = element.closest('[data-key]')
+  const closest = findClosestNode(element, '[data-key]')
   if (!closest) return null
 
   const key = closest.getAttribute('data-key')
