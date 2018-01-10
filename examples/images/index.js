@@ -1,5 +1,5 @@
 
-import { Editor, getEventRange, getEventTransfer } from 'slate-react'
+import { Editor, getEventRange, getEventTransfer } from 'slate-react' // eslint-disable-line
 import { Block, Value } from 'slate'
 
 import React from 'react'

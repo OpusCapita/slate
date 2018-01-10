@@ -1,6 +1,6 @@
 
 import Plain from 'slate-plain-serializer'
-import { Editor } from 'slate-react'
+import { Editor } from 'slate-react' // eslint-disable-line
 
 import React from 'react'
 

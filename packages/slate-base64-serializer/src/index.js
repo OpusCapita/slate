@@ -1,5 +1,5 @@
 
-import { Value } from 'slate'
+import { Value } from '@opuscapita/slate'
 import { atob, btoa } from 'isomorphic-base64'
 
 /**
@@ -49,7 +49,7 @@ function deserialize(string, options) {
  */
 
 function deserializeNode(string, options) {
-  const { Node } = require('slate')
+  const { Node } = require('@opuscapita/slate')
   const raw = decode(string)
   const node = Node.fromJSON(raw, options)
   return node

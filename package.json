@@ -49,6 +49,8 @@
     "read-metadata": "^1.0.0",
     "read-yaml-promise": "^1.0.2",
     "slate-collapse-on-escape": "^0.5.0",
+    "@opuscapita/slate-html-serializer": "^0.5.0",
+    "@opuscapita/slate-react": "^0.11.0",
     "slate-soft-break": "^0.5.0",
     "slate-sugar": "^0.6.1",
     "source-map-support": "^0.4.0",
@@ -60,10 +62,10 @@
     "yaml-js": "^0.2.0"
   },
   "peerDependencies": {
-    "slate": "*",
-    "slate-html-serializer": "*",
-    "slate-plain-serializer": "*",
-    "slate-react": "*"
+    "@opuscapita/slate": "*",
+    "@opuscapita/slate-html-serializer": "*",
+    "@opuscapita/slate-plain-serializer": "*",
+    "@opuscapita/slate-react": "*"
   },
   "scripts": {
     "benchmark": "mkdir -p ./tmp && babel-node ./node_modules/.bin/_matcha --reporter ./support/benchmark-reporter ./packages/*/benchmark/index.js > ./tmp/benchmark-comparison.json && babel-node ./support/benchmark-compare",
@@ -72,13 +74,14 @@
     "build": "yarn run build:packages",
     "build:examples": "yarn run build:examples:dev && yarn run build:examples:prod",
     "build:examples:dev": "browserify --debug --transform babelify ./examples/index.js > ./examples/build.dev.js",
-    "build:examples:prod": "NODE_ENV=production browserify --global-transform envify --global-transform uglifyify --transform babelify ./examples/index.js > ./examples/build.prod.js",
+    "build:examples:prod": "SET NODE_ENV=production browserify --global-transform envify --global-transform uglifyify --transform babelify ./examples/index.js > ./examples/build.prod.js",
     "build:packages": "lerna run build",
     "clean": "lerna run clean && rm -rf ./node_modules ./dist ./examples/build.*.js",
     "gh-pages": "yarn run build && yarn run build:examples && gh-pages --dist ./examples",
     "lint": "eslint packages/*/src packages/*/test examples/*/*.js examples/dev/*/*.js",
     "open": "open http://localhost:8080/dev.html",
     "release": "yarn run test && yarn run lint && lerna publish && yarn run gh-pages",
+    "release-": "yarn run test && yarn run lint && lerna publish",
     "start": "http-server ./examples",
     "test": "mocha --compilers js:babel-core/register ./packages/*/test/index.js",
     "watch": "npm-run-all --parallel --print-label watch:examples watch:packages start",

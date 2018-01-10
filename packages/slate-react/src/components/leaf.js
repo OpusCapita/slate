@@ -2,7 +2,7 @@
 import Debug from 'debug'
 import React from 'react'
 import Types from 'prop-types'
-import SlateTypes from 'slate-prop-types'
+import SlateTypes from '@opuscapita/slate-prop-types'
 
 import OffsetKey from '../utils/offset-key'
 
