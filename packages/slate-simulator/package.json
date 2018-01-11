@@ -9,15 +9,15 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "peerDependencies": {
-    "slate": "^0.31.8",
-    "slate-dev-logger": "^0.1.23"
-  },
   "devDependencies": {
     "babel-cli": "^6.10.1",
     "browserify": "^13.0.1",
     "slate": "^0.31.8",
     "uglify-js": "^2.7.0"
+  },
+  "peerDependencies": {
+    "slate": "^0.31.8",
+    "slate-dev-logger": "^0.1.23"
   },
   "scripts": {
     "build": "babel --out-dir ./lib ./src",

@@ -13,12 +13,6 @@
     "slate-dev-logger": "^0.1.36",
     "type-of": "^2.0.1"
   },
-  "peerDependencies": {
-    "immutable": "^3.8.1",
-    "react": "^0.14.0 || ^15.0.0 || ^16.0.0",
-    "react-dom": "^0.14.0 || ^15.0.0 || ^16.0.0",
-    "slate": "^0.31.8"
-  },
   "devDependencies": {
     "babel-cli": "^6.10.1",
     "browserify": "^13.0.1",
@@ -26,6 +20,12 @@
     "slate": "^0.31.8",
     "slate-hyperscript": "^0.4.16",
     "uglify-js": "^2.7.0"
+  },
+  "peerDependencies": {
+    "immutable": "^3.8.1",
+    "react": "^0.14.0 || ^15.0.0 || ^16.0.0",
+    "react-dom": "^0.14.0 || ^15.0.0 || ^16.0.0",
+    "slate": "^0.31.8"
   },
   "scripts": {
     "build": "babel --out-dir ./lib ./src",
