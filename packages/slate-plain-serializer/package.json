@@ -1,7 +1,7 @@
 {
   "name": "@opuscapita/slate-plain-serializer",
   "description": "A plain text serializer for Slate editors.",
-  "version": "0.4.17",
+  "version": "0.5.0",
   "license": "MIT",
   "repository": "git://github.com/ianstormtaylor/slate.git",
   "main": "./lib/index.js",
