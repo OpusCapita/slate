@@ -53,8 +53,8 @@
     "read-metadata": "^1.0.0",
     "read-yaml-promise": "^1.0.2",
     "slate-collapse-on-escape": "^0.5.0",
-    "@opuscapita/slate-html-serializer": "^0.5.0",
-    "@opuscapita/slate-react": "^0.11.0",
+    "slate-html-serializer": "^0.5.0",
+    "slate-react": "^0.11.0",
     "slate-soft-break": "^0.5.0",
     "slate-sugar": "^0.6.1",
     "source-map-support": "^0.4.0",
@@ -66,10 +66,10 @@
     "yaml-js": "^0.2.0"
   },
   "peerDependencies": {
-    "@opuscapita/slate": "*",
-    "@opuscapita/slate-html-serializer": "*",
-    "@opuscapita/slate-plain-serializer": "*",
-    "@opuscapita/slate-react": "*"
+    "slate": "*",
+    "slate-html-serializer": "*",
+    "slate-plain-serializer": "*",
+    "slate-react": "*"
   },
   "scripts": {
     "benchmark": "mkdir -p ./tmp && babel-node ./node_modules/.bin/_matcha --reporter ./support/benchmark-reporter ./packages/*/benchmark/index.js > ./tmp/benchmark-comparison.json && babel-node ./support/benchmark-compare",
