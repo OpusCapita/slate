@@ -1,7 +1,7 @@
 
 import getWindow from 'get-window'
 
-import { Range } from '@opuscapita/slate'
+import { Range } from 'slate'
 import findNode from './find-node'
 import findRange from './find-range'
 

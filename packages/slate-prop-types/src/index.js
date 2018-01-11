@@ -15,7 +15,7 @@ import {
   Stack,
   Value,
   Text,
-} from '@opuscapita/slate'
+} from 'slate'
 
 /**
  * Create a prop type checker for Slate objects with `name` and `validate`.

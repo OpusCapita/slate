@@ -1,10 +1,10 @@
 
-import Base64 from '@opuscapita/slate-base64-serializer'
+import Base64 from 'slate-base64-serializer'
 import Debug from 'debug'
-import Plain from '@opuscapita/slate-plain-serializer'
+import Plain from 'slate-plain-serializer'
 import React from 'react'
 import getWindow from 'get-window'
-import { Block, Inline, Text } from '@opuscapita/slate'
+import { Block, Inline, Text } from 'slate'
 
 import EVENT_HANDLERS from '../constants/event-handlers'
 import HOTKEYS from '../constants/hotkeys'

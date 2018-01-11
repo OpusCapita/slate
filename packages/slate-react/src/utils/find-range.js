@@ -1,7 +1,7 @@
 
 import getWindow from 'get-window'
 import isBackward from 'selection-is-backward'
-import { Range } from '@opuscapita/slate'
+import { Range } from 'slate'
 
 import findPoint from './find-point'
 

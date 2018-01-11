@@ -11,7 +11,7 @@ import {
   Range,
   Text,
   Value,
-} from '@opuscapita/slate'
+} from 'slate'
 
 /**
  * Create selection point constants, for comparison by reference.

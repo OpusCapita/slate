@@ -3,7 +3,7 @@ import Debug from 'debug'
 import React from 'react'
 import Types from 'prop-types'
 import getWindow from 'get-window'
-import logger from '@opuscapita/slate-dev-logger'
+import logger from 'slate-dev-logger'
 import throttle from 'lodash.throttle'
 
 import EVENT_HANDLERS from '../constants/event-handlers'

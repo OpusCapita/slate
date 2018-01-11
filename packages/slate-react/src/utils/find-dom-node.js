@@ -1,5 +1,5 @@
 
-import { Node } from '@opuscapita/slate'
+import { Node } from 'slate'
 
 /**
  * Find the DOM node for a `key`.
