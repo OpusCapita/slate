@@ -1,5 +1,5 @@
 
-import Base64 from 'slate-base64-serializer'
+import Base64 from '@opuscapita/slate-base64-serializer'
 
 import TRANSFER_TYPES from '../constants/transfer-types'
 

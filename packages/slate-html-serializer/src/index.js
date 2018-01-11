@@ -2,7 +2,7 @@
 import React from 'react'
 import ReactDOMServer from 'react-dom/server'
 import typeOf from 'type-of'
-import { Node, Value } from 'slate'
+import { Node, Value } from '@opuscapita/slate'
 import { Record } from 'immutable'
 
 /**
