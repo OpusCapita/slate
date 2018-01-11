@@ -12,12 +12,12 @@
   "devDependencies": {
     "babel-cli": "^6.10.1",
     "browserify": "^13.0.1",
-    "@opuscapita/slate": "^0.31.8",
+    "@opuscapita/slate": "^0.32.1",
     "uglify-js": "^2.7.0"
   },
   "peerDependencies": {
-    "@opuscapita/slate": "^0.31.8",
-    "@opuscapita/slate-dev-logger": "^0.1.23"
+    "@opuscapita/slate": "^0.32.1",
+    "@opuscapita/slate-dev-logger": "^0.2.1"
   },
   "scripts": {
     "build": "babel --out-dir ./lib ./src",
