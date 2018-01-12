@@ -1,7 +1,7 @@
 {
   "name": "@opuscapita/slate-react",
   "description": "A set of React components for building completely customizable rich-text editors.",
-  "version": "0.11.1",
+  "version": "0.11.2-1",
   "license": "MIT",
   "repository": "git://github.com/ianstormtaylor/slate.git",
   "main": "./lib/index.js",
@@ -10,6 +10,10 @@
     "access": "public"
   },
   "dependencies": {
+    "@opuscapita/slate-base64-serializer": "^0.3.1-2",
+    "@opuscapita/slate-dev-logger": "^0.2.1",
+    "@opuscapita/slate-plain-serializer": "^0.5.2-1",
+    "@opuscapita/slate-prop-types": "^0.5.2-1",
     "debug": "^2.3.2",
     "get-window": "^1.1.1",
     "is-hotkey": "^0.1.1",
@@ -20,25 +24,21 @@
     "prop-types": "^15.5.8",
     "react-immutable-proptypes": "^2.1.0",
     "react-portal": "^3.1.0",
-    "selection-is-backward": "^1.0.0",
-    "@opuscapita/slate-base64-serializer": "^0.3.1-0",
-    "@opuscapita/slate-dev-logger": "^0.2.1",
-    "@opuscapita/slate-plain-serializer": "^0.5.1",
-    "@opuscapita/slate-prop-types": "^0.5.1"
+    "selection-is-backward": "^1.0.0"
   },
   "devDependencies": {
+    "@opuscapita/slate": "^0.32.2-1",
+    "@opuscapita/slate-hyperscript": "^0.5.2-1",
+    "@opuscapita/slate-simulator": "^0.5.2-1",
     "babel-cli": "^6.10.1",
     "browserify": "^13.0.1",
     "mocha": "^2.5.3",
-    "@opuscapita/slate": "^0.32.1",
-    "@opuscapita/slate-hyperscript": "^0.5.1",
-    "@opuscapita/slate-simulator": "^0.5.1",
     "uglify-js": "^2.7.0"
   },
   "peerDependencies": {
+    "@opuscapita/slate": "^0.32.2-1",
     "react": "^0.14.0 || ^15.0.0 || ^16.0.0",
-    "react-dom": "^0.14.0 || ^15.0.0 || ^16.0.0",
-    "@opuscapita/slate": "^0.32.1"
+    "react-dom": "^0.14.0 || ^15.0.0 || ^16.0.0"
   },
   "scripts": {
     "build": "babel --out-dir ./lib ./src",
