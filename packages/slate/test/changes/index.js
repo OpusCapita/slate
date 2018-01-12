@@ -12,17 +12,23 @@ describe('changes', async () => {
   const dir = resolve(__dirname)
   const categories = fs.readdirSync(dir).filter(c => c[0] != '.' && c != 'index.js')
 
-  for (const category of categories) {
+  // for (const category of categories) {
+  for (let i = 0; i < categories.length; i++) {
+    const category = categories[i];
     describe(category, () => {
       const categoryDir = resolve(dir, category)
       const methods = fs.readdirSync(categoryDir).filter(c => c[0] != '.')
 
-      for (const method of methods) {
+      // for (const method of methods) {
+      for (let j = 0; j < methods.length; j++) {
+        const method = methods[j];
         describe(toCamel(method), () => {
           const testDir = resolve(categoryDir, method)
           const tests = fs.readdirSync(testDir).filter(t => t[0] != '.' && !!~t.indexOf('.js')).map(t => basename(t, extname(t)))
 
-          for (const test of tests) {
+          // for (const test of tests) {
+          for (let k = 0; k < tests.length; i++) {
+            const test = tests[k];
             if (test === 'with-block' || toCamel(method) === 'insertInline' && test === 'with-inline') {
               it.skip(test, async () => {
                 const module = require(resolve(testDir, test))

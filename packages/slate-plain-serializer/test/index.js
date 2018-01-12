@@ -32,7 +32,9 @@ describe('slate-plain-serializer', () => {
     const dir = resolve(__dirname, './deserialize')
     const tests = fs.readdirSync(dir).filter(t => t[0] != '.').map(t => basename(t, extname(t)))
 
-    for (const test of tests) {
+    // for (const test of tests) {
+    for (let i = 0; i < tests.length; i++) {
+      const test = tests[i];
       it(test, async () => {
         const module = require(resolve(dir, test))
         const { input, output, options } = module
@@ -48,7 +50,9 @@ describe('slate-plain-serializer', () => {
     const dir = resolve(__dirname, './serialize')
     const tests = fs.readdirSync(dir).filter(t => t[0] != '.').map(t => basename(t, extname(t)))
 
-    for (const test of tests) {
+    // for (const test of tests) {
+    for (let i = 0; i < tests.length; i++) {
+      const test = tests[i];
       it(test, async () => {
         const module = require(resolve(dir, test))
         const { input, output, options } = module

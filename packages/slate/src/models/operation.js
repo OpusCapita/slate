@@ -95,7 +95,9 @@ class Operation extends Record(DEFAULTS) {
       throw new Error(`\`Operation.fromJSON\` was passed an unrecognized operation type: "${type}"`)
     }
 
-    for (const key of ATTRIBUTES) {
+    // for (const key of ATTRIBUTES) {
+    for (let i = 0; i < ATTRIBUTES.length; i++) {
+      const key = ATTRIBUTES[i];
       let v = object[key]
 
       if (v === undefined) {
@@ -215,7 +217,9 @@ class Operation extends Record(DEFAULTS) {
     const object = { kind, type }
     const ATTRIBUTES = OPERATION_ATTRIBUTES[type]
 
-    for (const key of ATTRIBUTES) {
+    // for (const key of ATTRIBUTES) {
+    for (let i = 0; i < ATTRIBUTES.length; i++) {
+      const key = ATTRIBUTES[i];
       let value = this[key]
 
       // Skip keys for objects that should not be serialized, and are only used

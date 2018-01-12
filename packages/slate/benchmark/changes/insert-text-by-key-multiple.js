@@ -5,7 +5,9 @@ import h from '../../test/helpers/h'
 import { __clear } from '../../lib/utils/memoize'
 
 export default function ({ change, keys }) {
-  for (const key of keys) {
+  // for (const key of keys) {
+  for (let i = 0; i < keys.length; i++) {
+    const key = keys[i];
     change.insertTextByKey(key, 0, 'a')
   }
 }

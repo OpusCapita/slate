@@ -16,7 +16,9 @@ describe('rendering', () => {
   const dir = resolve(__dirname, './fixtures')
   const tests = fs.readdirSync(dir).filter(t => t[0] != '.' && !!~t.indexOf('.js')).map(t => basename(t, extname(t)))
 
-  for (const test of tests) {
+  // for (const test of tests) {
+  for (let i = 0; i < tests.length; i++) {
+    const test = tests[i];
     it(test, async () => {
       const module = require(resolve(dir, test))
       const { value, output, props } = module

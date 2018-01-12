@@ -13,7 +13,9 @@ describe('schema', () => {
     const testsDir = resolve(__dirname, 'core')
     const tests = fs.readdirSync(testsDir).filter(t => t[0] != '.').map(t => basename(t, extname(t)))
 
-    for (const test of tests) {
+    // for (const test of tests) {
+    for (let i = 0; i < tests.length; i++) {
+      const test = tests[i];
       it(test, async () => {
         const module = require(resolve(testsDir, test))
         const { input, output, schema } = module
@@ -34,7 +36,9 @@ describe('schema', () => {
     const testsDir = resolve(__dirname, 'custom')
     const tests = fs.readdirSync(testsDir).filter(t => t[0] != '.').map(t => basename(t, extname(t)))
 
-    for (const test of tests) {
+    // for (const test of tests) {
+    for (let i = 0; i < tests.length; i++) {
+      const test = tests[i];
       it(test, async () => {
         const module = require(resolve(testsDir, test))
         const { input, output, schema } = module

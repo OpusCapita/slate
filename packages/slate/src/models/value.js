@@ -104,7 +104,9 @@ class Value extends Record(DEFAULTS) {
 
     // Allow plugins to set a default value for `data`.
     if (options.plugins) {
-      for (const plugin of options.plugins) {
+      // for (const plugin of options.plugins) {
+      for (let i = 0; i < options.plugins; i++) {
+        const plugin = options.plugins[i];
         if (plugin.data) data = data.merge(plugin.data)
       }
     }
