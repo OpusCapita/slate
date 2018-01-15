@@ -1,7 +1,7 @@
 {
   "name": "@opuscapita/slate",
   "description": "A completely customizable framework for building rich text editors.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "repository": "git://github.com/ianstormtaylor/slate.git",
   "main": "./lib/index.js",
@@ -10,7 +10,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@opuscapita/slate-dev-logger": "^1.0.3",
+    "@opuscapita/slate-dev-logger": "^1.0.4",
     "debug": "^2.3.2",
     "direction": "^0.1.5",
     "es6-map": "^0.1.4",
@@ -21,7 +21,7 @@
     "type-of": "^2.0.1"
   },
   "devDependencies": {
-    "@opuscapita/slate-hyperscript": "^1.0.3",
+    "@opuscapita/slate-hyperscript": "^1.0.4",
     "babel-cli": "^6.10.1",
     "browserify": "^13.0.1",
     "uglify-js": "^2.7.0"
