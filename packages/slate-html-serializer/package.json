@@ -1,7 +1,7 @@
 {
   "name": "@opuscapita/slate-html-serializer",
   "description": "An HTML serializer for Slate editors.",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "license": "MIT",
   "repository": "git://github.com/ianstormtaylor/slate.git",
   "main": "./lib/index.js",
@@ -10,19 +10,19 @@
     "access": "public"
   },
   "dependencies": {
-    "@opuscapita/slate-dev-logger": "^0.3.1",
+    "@opuscapita/slate-dev-logger": "^0.3.2",
     "type-of": "^2.0.1"
   },
   "devDependencies": {
-    "@opuscapita/slate": "^0.33.1",
-    "@opuscapita/slate-hyperscript": "^0.6.1",
+    "@opuscapita/slate": "^0.33.2",
+    "@opuscapita/slate-hyperscript": "^0.6.2",
     "babel-cli": "^6.10.1",
     "browserify": "^13.0.1",
     "mocha": "^2.5.3",
     "uglify-js": "^2.7.0"
   },
   "peerDependencies": {
-    "@opuscapita/slate": "^0.33.1",
+    "@opuscapita/slate": "^0.33.2",
     "immutable": "^3.8.1",
     "react": "^0.14.0 || ^15.0.0 || ^16.0.0",
     "react-dom": "^0.14.0 || ^15.0.0 || ^16.0.0"
