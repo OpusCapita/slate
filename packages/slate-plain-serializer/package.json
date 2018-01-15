@@ -1,7 +1,7 @@
 {
   "name": "@opuscapita/slate-plain-serializer",
   "description": "A plain text serializer for Slate editors.",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "repository": "git://github.com/ianstormtaylor/slate.git",
   "main": "./lib/index.js",
@@ -10,15 +10,15 @@
     "access": "public"
   },
   "dependencies": {
-    "@opuscapita/slate-dev-logger": "^1.0.4"
+    "@opuscapita/slate-dev-logger": "^1.0.5"
   },
   "peerDependencies": {
-    "@opuscapita/slate": "^1.0.4",
+    "@opuscapita/slate": "^1.0.5",
     "immutable": "^3.8.0"
   },
   "devDependencies": {
-    "@opuscapita/slate": "^1.0.4",
-    "@opuscapita/slate-hyperscript": "^1.0.4",
+    "@opuscapita/slate": "^1.0.5",
+    "@opuscapita/slate-hyperscript": "^1.0.5",
     "babel-cli": "^6.10.1",
     "browserify": "^13.0.1",
     "mocha": "^2.5.3",
