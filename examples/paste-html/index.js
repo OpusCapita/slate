@@ -1,7 +1,7 @@
 
-import Html from 'slate-html-serializer' // eslint-disable-line
-import { Editor, getEventTransfer } from 'slate-react' // eslint-disable-line
-import { Value } from 'slate'
+import Html from '@opuscapita/slate-html-serializer' // eslint-disable-line
+import { Editor, getEventTransfer } from '@opuscapita/slate-react' // eslint-disable-line
+import { Value } from '@opuscapita/slate'
 
 import React from 'react'
 import initialValue from './value.json'

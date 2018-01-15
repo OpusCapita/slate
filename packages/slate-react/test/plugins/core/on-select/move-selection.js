@@ -1,7 +1,7 @@
 /** @jsx h */
 
 import h from '../../../helpers/h'
-import { Range } from 'slate'
+import { Range } from '@opuscapita/slate'
 
 export default function (simulator) {
   const { value } = simulator

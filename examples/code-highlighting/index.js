@@ -1,6 +1,6 @@
 
-import { Editor } from 'slate-react' // eslint-disable-line
-import { Value } from 'slate'
+import { Editor } from '@opuscapita/slate-react' // eslint-disable-line
+import { Value } from '@opuscapita/slate'
 
 import Prism from 'prismjs'
 import React from 'react'

@@ -9,7 +9,7 @@ import 'babel-polyfill' // eslint-disable-line import/no-extraneous-dependencies
  * Dependencies.
  */
 
-import { resetKeyGenerator } from 'slate'
+import { resetKeyGenerator } from '@opuscapita/slate'
 
 /**
  * Tests.

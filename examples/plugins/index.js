@@ -1,6 +1,6 @@
 
-import Plain from 'slate-plain-serializer'
-import { Editor } from 'slate-react' // eslint-disable-line
+import Plain from '@opuscapita/slate-plain-serializer'
+import { Editor } from '@opuscapita/slate-react' // eslint-disable-line
 
 import React from 'react'
 import CollapseOnEscape from 'slate-collapse-on-escape'

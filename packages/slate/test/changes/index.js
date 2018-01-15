@@ -26,9 +26,9 @@ describe('changes', async () => {
           const testDir = resolve(categoryDir, method)
           const tests = fs.readdirSync(testDir).filter(t => t[0] != '.' && !!~t.indexOf('.js')).map(t => basename(t, extname(t)))
 
-          // for (const test of tests) {
-          for (let k = 0; k < tests.length; i++) {
-            const test = tests[k];
+          for (const test of tests) {
+          // for (let k = 0; k < tests.length; i++) {
+          //   const test = tests[k];
             if (test === 'with-block' || toCamel(method) === 'insertInline' && test === 'with-inline') {
               it.skip(test, async () => {
                 const module = require(resolve(testDir, test))

@@ -1,6 +1,6 @@
 
-import { Value } from 'slate'
-import { Editor } from 'slate-react' // eslint-disable-line
+import { Value } from '@opuscapita/slate'
+import { Editor } from '@opuscapita/slate-react' // eslint-disable-line
 
 import React from 'react'
 import initialValue from './value.json'

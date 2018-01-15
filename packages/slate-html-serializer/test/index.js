@@ -13,7 +13,7 @@ import Html from '..'
 import assert from 'assert'
 import fs from 'fs'
 import parse5 from 'parse5' // eslint-disable-line import/no-extraneous-dependencies
-import { Value, resetKeyGenerator } from 'slate'
+import { Value, resetKeyGenerator } from '@opuscapita/slate'
 import { basename, extname, resolve } from 'path'
 
 /**

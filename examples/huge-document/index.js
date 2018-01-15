@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 
-import { Editor } from 'slate-react' // eslint-disable-line
-import { Value } from 'slate'
+import { Editor } from '@opuscapita/slate-react' // eslint-disable-line
+import { Value } from '@opuscapita/slate'
 
 import React from 'react'
 import faker from 'faker'

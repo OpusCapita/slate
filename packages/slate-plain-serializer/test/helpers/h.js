@@ -1,5 +1,5 @@
 
-import { createHyperscript } from 'slate-hyperscript'
+import { createHyperscript } from '@opuscapita/slate-hyperscript'
 
 /**
  * Define a hyperscript.
